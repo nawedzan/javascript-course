@@ -59,3 +59,4 @@ const user1 = {
      const func=user1.about.bind(user2,'this1','this2')
      func();
 
+ 

@@ -22,7 +22,7 @@
 // what we can do is make a function and whenever an array of users request these data we give them their data by calling the reqired function
 // so create a funciton which creates an empty object adds key value pair and returns that object
 // in empty object key value pair are added using = sign and not : sign
-
+// 
 function createUser(firstname,lastname,email,age,address){
     const user={};
     user.firstname=firstname;
@@ -43,7 +43,7 @@ function createUser(firstname,lastname,email,age,address){
                   
     }
     return user;
-
+    // in js this function is called constructor function 
 }
 
 const user1=createUser("nawed","zan","nawedzan3016@gmail.com",26,"jivi");

@@ -32,6 +32,7 @@ function createUser(firstname,lastname,email,age,address){
     user.address=address;
     user.isAbout=function(){
                console.log(`${this.firstname} ${this.lastname} has an email id of ${this.email} and is ${this.age} old and lives in ${this.address}`)
+               console.log(this.is18)
     }
     user.is18=function(){
         if(this.age>=18){

@@ -8,12 +8,13 @@
 const user={
     Name:"nawed",
     age:18,
+    realName:this.age,
     about:function(){
-        console.log(user.Name,user.age)
+        console.log(this.Name,this.age)
         return null
     },
-    // address:{home:"sundarapada",office:"california",
-    // }
+    address:{home:"sundarapada",office:"california",
+    }
 }
 // console.log(user)
 // console.log('\n')
@@ -21,4 +22,5 @@ const user={
 // console.log('\n')
 // user.about()
 console.log(user?.address?.home)
+console.log(user.realName)
 // ---------------------------------------------

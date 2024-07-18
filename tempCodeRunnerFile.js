@@ -1,8 +1,6 @@
-function createUser(firstname,age){
-    this.firstname=firstname;
-    this.age=age;
+function just_a_func(){
+    console.log("yo")
 }
-
-const user1=new createUser("harshit",6)
-
-console.log(user1.age);
+this.just_a_func();
+window.just_a_func();
+document.just_a_func();

@@ -7,6 +7,8 @@ with a specific this context and arguments provided individually.
 It's especially useful for borrowing methods and handling different this contexts in functions. 
 Understanding how to use call can make your code more flexible and reusable.
 - the first argument of call function is the this argument of the outsider object
+
+if call is used than the value of this changes from the object in which the function is present to the object passed in the argument
 */
 
 // function about(hobby, favMusician){

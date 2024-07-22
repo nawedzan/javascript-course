@@ -1,4 +1,4 @@
-// arrow functions 
+// arrow functions nad this
 
 const user1 = {
     firstName : "harshit",

@@ -1,5 +1,5 @@
 //for each method
-let numbers="jasper";
+let numbers=[1,2,3,4];
 numbers.forEach(function(a){
 
     console.log(a);
@@ -19,3 +19,4 @@ const users = [
 users.forEach(function(user){
     console.log(user.firstName);
 })
+// wont work on strings

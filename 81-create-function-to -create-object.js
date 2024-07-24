@@ -49,4 +49,6 @@ function createUser(firstname,lastname,email,age,address){
 
 const user1=createUser("nawed","zan","nawedzan3016@gmail.com",26,"jivi");
 console.log(user1.is18());
+// the above statement was not working coz of no return statement
+user1.is18();
 console.log(user1)

@@ -38,6 +38,14 @@ createUser.prototype.is18=function(){
     }
 
 }
+createUser.prototype.living=function(){
+    console.log("he is alive");
+}
 const user1=createUser("nawed","zan","nawedzan3016@gmail.com",26,"jivi")
 
 user1.is18() // this works
+user1.living();
+
+// the whole point of this lecture was to why create a separate object with all the function when you can link the prototype(object of a function)
+// of the constructor function with the created object. using object.create
+

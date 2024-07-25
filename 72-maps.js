@@ -18,17 +18,17 @@
 // object literal 
 // key -> string 
 // key -> symbol
-// const person = {
-//     firstName : "harshit",
-//     age: 7,
-//     1:"one"
-// }
-// // console.log(person.firstName);
-// // console.log(person["firstName"]);
-// // console.log(person[1]);
-// for(let key in person){
-//     console.log(typeof key);
-// }
+const person1 = {
+    firstName : "harshit",
+    age: 7,
+    1:"one"
+}
+// console.log(person.firstName);
+// console.log(person["firstName"]);
+// console.log(person[1]);
+for(let key in person1){
+    console.log(typeof key);
+}
 
 // key value pair 
 const person = new Map();
@@ -37,11 +37,12 @@ person.set('age', 7);
 person.set(1,'one');
 person.set([1,2,3],'onetwothree');
 person.set({1: 'one'},'onetwothree');
-// console.log(person);
-// console.log(person.get(1));
-// for(let key of person.keys()){
-//     console.log(key, typeof key);
-// }
+console.log(person);
+console.log(person.get(1));
+for(let key of person.keys()){
+    console.log(key, typeof key);
+}
+console.log(person);
 for(let index in person){
     // console.log(Array.isArray(key));
     console.log(index)

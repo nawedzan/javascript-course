@@ -42,3 +42,4 @@ newSet.has()
 for(let number of newSet){
     console.log(number);
 }
+newSet.a=1;

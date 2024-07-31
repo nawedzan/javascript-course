@@ -33,6 +33,7 @@ const tommy = new Dog("tommy", 3,45);
 console.log(tommy.run());
 console.log(Animal);
 
+
 // super is a keyword used to acesss the constructor of the parent class
 // it cannot touch the methods or the variable not defined in the constructor
 

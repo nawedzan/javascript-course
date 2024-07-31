@@ -9,6 +9,7 @@ CreateUser.prototype.about = function(){
     return `${this.firstName} is ${this.age} years old.`;
 };
 CreateUser.prototype.is18 = function (){
+    this.is18.prototype.get=1;
     return this.age >= 18; 
 }
 CreateUser.prototype.sing = function (){
@@ -26,8 +27,23 @@ for(let key in user1){
     if(user1.hasOwnProperty(key)){
         console.log(key);
     }
-
+    
 }
 
 // what hasOwnProperty does is it checks whether the key of user1 is its own key or is it in its protyotype or in prototype of prototype
 // if the key is the objects own key than it returns true or else it returns false
+// 
+//  OWN EXPERIMENT
+
+// set the prototype of a method of an object to something
+console.log(CreateUser.prototype.about())
+user2.about.prototype.get=1
+// CreateUser.prototype.
+const user={
+    a:1,
+    b:2,
+}
+Object.setPrototypeOf(user1.about.prototype,user)
+
+console.log(user1.about.prototype)
+

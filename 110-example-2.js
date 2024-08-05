@@ -1,26 +1,27 @@
-// function func(){
-//     let counter = 0;
-//     return function(){
-//         if(counter < 1){
-//             console.log("Hi You Called me");
-//             console.log(counter);
-//             counter++;
-//         }else{
-//             console.log("Mai already ek bar call ho chuka hoon!");
-//             console.log(counter);
-//             counter++;
-//         }
-//     }
-// }
+function func(){
+    let counter = 0;
+    return function(){
+        if(counter < 1){
+            console.log("Hi You Called me");
+            console.log(counter);
+            counter++;
+        }else{
+            console.log("Mai already ek bar call ho chuka hoon!");
+            console.log(counter);
+            counter++;
+        }
+    }
+}
 
-// const myFunc = func();
-// myFunc();
-// myFunc();
-// myFunc();
-// myFunc();
-// myFunc();
-// myFunc();
-// myFunc();
+const myFunc = func();
+myFunc();
+myFunc();
+myFunc();
+myFunc();
+myFunc();
+myFunc();
+myFunc();
+console.log(myFunc.counter)
 
 // the clousure variable act like referece passed arguments of c++ and not only variable of lexical environment are passed with the returned function
 // which in other languages donot happen as when a block ends the object occupying the memory are knocked out

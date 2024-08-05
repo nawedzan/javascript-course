@@ -27,7 +27,7 @@ function printFullName(firstName, lastName){
     let x=0;
     function printName(){
         console.log(firstName);
-        // console.log(x);
+        console.log(x);
     }
     return printName;
 }
@@ -35,6 +35,7 @@ function printFullName(firstName, lastName){
 const ans = printFullName("harshit", "sharma");
 // console.log(printFullName.prototype);
 console.log(ans.prototype);
+console.log(ans.prototype.x)
 ans();
 
 // const hello = x => () =>x*x;
@@ -122,7 +123,7 @@ I made a YouTube video looking at this code with some practical examples of usag
 
 // However, the object your code did log can be inspected in the console (or in the debugger) and you can navigate to the closure scope:
 
-https://i.sstatic.net/75mpi.png
+//https://i.sstatic.net/75mpi.png
 
 
 // it would only print those in scoops that the return function is using

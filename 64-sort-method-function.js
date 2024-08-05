@@ -107,7 +107,7 @@
 
 const numbers = [5,9,1200, 410, 3000];
 numbers.sort((a,b)=>{
-    return b-a;
+    return ;
 });
 // numbers.sort((a,b)=>a-b);
 console.log(numbers);

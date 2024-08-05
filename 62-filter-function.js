@@ -20,7 +20,7 @@ const numbers = [1,3,2,6,4,8];
 
 
 const users = [
-    {firstName: "harshit", age: 23},
+    {firstName: "harshit", age: 0},
     {firstName: "mohit", age: 21},
     {firstName: "nitish", age: 22},
     {firstName: "garima", age: 20},
@@ -53,7 +53,8 @@ console.log(doubled);  // Output: [2, 4, 6, 8, 10]
 
 ### `filter` Method
 
-- **Purpose:** The `filter` method is used to create a new array containing only the elements that pass a specified test (i.e., the callback function returns `true`).
+- **Purpose:** The `filter` method is used to create a new array containing only the elements that pass a specified test 
+(i.e., the callback function returns `true`).
 - **Return Value:** It returns a new array with a subset of the original elements, potentially of different length.
 - **Use Case:** Use `filter` when you want to include only certain elements in a new array based on a condition.
 
@@ -103,7 +104,9 @@ While this achieves the same result as `filter`, it’s more complex and less re
 
 ### Conclusion
 
-While both `map` and `filter` are array methods that iterate over the elements, they are designed for different tasks. `map` is for transforming every element in the array, and `filter` is for selecting elements that meet a condition. Use each method for its intended purpose to write clear and efficient code.
+While both `map` and `filter` are array methods that iterate over the elements, they are designed for different tasks. 
+`map` is for transforming every element in the array, and `filter` is for selecting elements that meet a condition. 
+Use each method for its intended purpose to write clear and efficient code.
 */
 
 // IMPORTANT 

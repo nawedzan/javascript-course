@@ -17,12 +17,12 @@ const users = [
     {firstName: "garima", age: 20},
 ]
 
-const userNames = users.map((user)=>{
-    return user.firstName;
-});
+const userNames = users.map(function(user){
+    return user.firstName+this.firstName;
+},users[0]);
 
 console.log(userNames);
-console.log(users);
+// console.log(users);
 
 // in forEach console.log thing happens while in map returning in an index happens
 // -----------------------------------------------------------------------

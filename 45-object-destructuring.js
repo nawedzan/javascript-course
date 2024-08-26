@@ -5,9 +5,9 @@ const band = {
     anotherFamousSong: "kashmir",
   };
   
-  let { bandName, famousSong, ...restProp } = band;
+  let { bandName, famousSong, ...restProps } = band;
   console.log(bandName);
-  console.log(restProp);
+  console.log(restProps);
   /*Object destructuring is a feature in JavaScript that allows you to extract properties from objects and assign them to variables. 
   Let's break down what's happening in your code and explain the key concepts of object destructuring:
 

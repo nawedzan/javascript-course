@@ -35,7 +35,9 @@ const numbers = [1,2,3,4,5, 10];
 
 
 
-const sum = numbers.reduce((accumulator, currentValue)=>{
+const sum = numbers.reduce((accumulator, currentValue,a,numbers)=>{
+    console.log(numbers);
+    console.log(a);
     return accumulator *  currentValue;
 }, 10000);
 

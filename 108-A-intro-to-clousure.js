@@ -38,10 +38,10 @@ console.log(ans.prototype);
 console.log(ans.prototype.x)
 ans();
 
-// const hello = x => () =>x*x;
-// const ans1=hello(14);
-// console.log(hello())
-// console.log(ans1());
+const hello = x => () =>x*x;
+const ans1=hello(14);
+console.log(hello())
+console.log(ans1());
 
 /*Variable scope
 When you declare a local variable, that variable has a scope. Generally, local variables exist only 
@@ -107,6 +107,8 @@ as long as the function continues to exist.
 a belongs to the scope of outer. The scope of inner has a parent pointer to the scope of outer. fnc is a variable which points to inner.
  a persists as long as fnc persists. a is within the closure.
 
+
+
 Further reading (watching)
 I made a YouTube video looking at this code with some practical examples of usage.
 */
@@ -127,3 +129,8 @@ I made a YouTube video looking at this code with some practical examples of usag
 
 
 // it would only print those in scoops that the return function is using
+
+//
+// ------------------------------------------------------
+
+// whenever clousures are formed the variable may get wiped out of stack memory but will be present in the heap memory

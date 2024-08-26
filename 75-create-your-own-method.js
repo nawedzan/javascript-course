@@ -1,5 +1,5 @@
 //make your own methods
-//when we want to write a object which uses the properties of that object itself we should use this
+// when we want to write a object which uses the properties of that object itself we should use this
 // this upto now is like a pointer to the immmediate object
 // this is that object which calls the function in which this is used.
 //---funciton inside object

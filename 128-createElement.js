@@ -9,8 +9,9 @@ const todoList = document.querySelector(".todo-list");
 newTodoItem.classList.add("text")
 const a=document.createElement("div");
 a.classList.add("todo-buttons")
-todoList.prepend(newTodoItem);
+todoList.pre pend(newTodoItem);
 console.log(newTodoItem);
+console.log(todoList)
 // const todo1 = document.querySelector('.todo-list li');
 // todo1.remove();
 // console.log(todo1)

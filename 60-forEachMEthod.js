@@ -25,6 +25,10 @@ users.forEach(function(user){
 let numbers=[1,2,3,4];
 numbers.forEach(function(a,i){
     numbers[i]=numbers[i]+1;
-    console.log(a);
-})
+    console.log(this.age);
+},users[0])
 console.log(numbers[1])
+
+// the given array can be changed with foreach
+// if the function is not consoleloging than nothing gets printed the return statement is ignored
+// for each takes two arguments one is callback function the other is thisarg

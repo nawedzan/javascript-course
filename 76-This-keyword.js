@@ -10,3 +10,4 @@ this.just_a_func();
 window.just_a_func();
 document.just_a_func();
 // both window and this refer to the same object window
+// for future reference this is taken as a context thing 

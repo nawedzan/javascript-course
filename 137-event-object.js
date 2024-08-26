@@ -22,9 +22,17 @@
 
 const allButtons = document.querySelectorAll(".my-buttons button");
 
+const parent =document.querySelector(".parent");
+
+parent.addEventListener('click',(e)=>{
+    console.log(e.currentTarget);
+    console.log(e.target)
+    console.log(e);
+})
 
 for(let button of allButtons){
     button.addEventListener("click",(e)=>{
         console.log(e.currentTarget);
+        console.log(e.target);
     })
 }

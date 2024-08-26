@@ -4,15 +4,15 @@
 const myArray = ['item1', 'item2', 'item3'];
 
 // delete
-// const deletedItem = myArray.splice(1, 2);
-// console.log("delted item", deletedItem);
+const deletedItem = myArray.splice(1, 1);
+console.log("delted item", deletedItem);
 // insert 
-// myArray.splice(1, 0,'inserted item');
+myArray.splice(1, 0,'inserted item');
 
 // insert and delete 
-const deletedItem = myArray.splice(1, 0, [1,2,3,4])
-console.log("delted item", deletedItem);
-console.log(myArray);
+// const deletedItem = myArray.splice(1, 0, [1,2,3,4])
+// console.log("delted item", deletedItem);
+// console.log(myArray);
 
 //1.we can insert item with splice
 //2. we can delete item with splice

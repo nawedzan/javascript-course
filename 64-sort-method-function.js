@@ -129,7 +129,7 @@ const products = [
 ]
 
 // lowToHigh
-const lowToHigh = products.slice(0).sort((a,b)=>{
+const lowToHigh = products.slice(1).sort((a,b)=>{
     return a.price-b.price
 });
 
@@ -137,7 +137,8 @@ const highToLow = products.slice(0).sort((a,b)=>{
     return b.price-a.price;
 });
 
-
+console.log(lowToHigh)
+console.log(products)
 
 const users = [
     {firstName: "harshit", age: 23},
@@ -158,3 +159,5 @@ users.sort((a,b)=>{
 // console.log(users);
 
 // sort method changes the array
+// but when we use slice method a new array is created to change , that array gets changed and we can store it in a variable
+// the argument is the index from which we can change

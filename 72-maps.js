@@ -47,6 +47,7 @@ for(let index in person){
     // console.log(Array.isArray(key));
     console.log(index)
 }
+// console.log(person)
 // the key  value is written in array coz we are destructureing it
 
 // const person1 = {
@@ -78,3 +79,4 @@ for (var i of arr) {
   // it doesn't log "3", "5", "7", "hello"
 }
 arr.bar="nolan";
+console.log(arr)

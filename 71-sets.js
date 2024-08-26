@@ -31,6 +31,7 @@
 // console.log(length);
 
 const newSet=new Set();
+console.dir(newSet)
 newSet.add('b');
 newSet.add([1,2,3,4]);
 newSet.add(9);

@@ -41,7 +41,7 @@ const user1 = {
         age: 9,
 
     }
-
+console.dir(user1.about)
     user1.about.call() //works 1
     user1.about.call(user2) //works 2
     

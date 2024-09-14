@@ -61,4 +61,30 @@ console.dir(user1.about)
      const func=user1.about.bind(user2,'this1','this2')
      func();
 
- 
+//      fn.call(context, arg1, arg2) calls the function with the specified "this" context.
+
+// fn.apply(context, [arg1, arg2]) calls the function with the specified "this" context, but the arguments are passed as an array.
+
+// fn.bind(context) creates a new function which will always use the specified "this" context when it is called.
+
+ // Top-level 'this' is bound to 'globalThis' in scripts.
+this.x = 9;
+const module1 = {
+  x: 81,
+  getX() {
+    return this.x;
+  },
+};
+
+// The 'this' parameter of 'getX' is bound to 'module'.
+console.log(module1.getX()); // 81
+
+const retrieveX = module1.getX.bind(module1);
+// The 'this' parameter of 'retrieveX' is bound to 'globalThis' in non-strict mode.
+console.log(retrieveX()); // 9
+
+// Create a new function 'boundGetX' with the 'this' parameter bound to 'module'.
+const boundGetX = retrieveX.bind(module1);
+console.log(boundGetX()); // 81
+
+// example copied from mdn

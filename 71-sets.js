@@ -44,3 +44,13 @@ for(let number of newSet){
     console.log(number);
 }
 newSet.a=1;
+
+// sets can act as objects and can hold properties
+
+// newSet.prototype.good="bad";
+
+console.log(Object.getPrototypeOf(newSet));
+console.log(newSet.size)
+
+// i can use getPrototypeof to access [[properties]] of set
+// D:\frontend course\javascript course\Screenshot 2024-09-09 125549.png

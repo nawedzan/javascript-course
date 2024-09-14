@@ -28,3 +28,4 @@ func() // output - undefined undefined
 
 const func1=user1.about.bind(user1);
 func1() // nawed zan
+

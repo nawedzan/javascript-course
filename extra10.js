@@ -1,3 +1,0 @@
-function  fnA(a){
-    return
-}

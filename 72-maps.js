@@ -37,14 +37,14 @@ person.set('age', 7);
 person.set(1,'one');
 person.set([1,2,3],'onetwothree');
 person.set({1: 'one'},'onetwothree');
-console.log(person);
+// console.log(person);
 console.log(person.get(1));
 for(let key of person.keys()){
     console.log(key, typeof key);
 }
 console.log(person);
 for(let index in person){
-    // console.log(Array.isArray(key));
+    console.log(Array.isArray(key));
     console.log(index)
 }
 // console.log(person)

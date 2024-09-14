@@ -91,3 +91,5 @@ However, it's important to ensure that the variable names you use match the prop
  Otherwise, you might end up with `undefined` values, as seen in your original code with `bandNam` instead of `bandName`. 
  The rest operator (`...restProps`) allows you to capture all remaining properties in a new object, 
  which can be very useful for handling a subset of an object's properties. */
+ 
+ // the rest element should always be last otherwise it will throw an error

@@ -37,6 +37,3 @@ changeText(heading1, "one", "red", 1000)
   .catch((error)=>{
       alert(error);
   })
-
-  // for now i thought promise.then returns a promise so if you want to use promise on the returned thing you need to save it in a variable first
-  // so here the callback is using a function that returns a promise so .then can be used directly on it
